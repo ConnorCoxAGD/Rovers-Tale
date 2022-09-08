@@ -1,0 +1,45 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/style.uss?fileID=7433441132597879392&amp;guid=5cdde71fa947dc5489ad3e73287ddaa3&amp;type=3#style" />
+    <MenuControl style="flex-grow: 1; margin-left: 1%; margin-right: 1%; margin-top: 1%; margin-bottom: 1%;">
+        <ui:VisualElement name="s-title" style="display: none; flex-grow: 0; justify-content: center; align-items: center; overflow: hidden; flex-shrink: 1; width: 100%; height: 100%;">
+            <ui:Label text="A Rover&apos;s Tale" display-tooltip-when-elided="true" class="title" style="font-size: 128px;" />
+            <ui:Label text="Click to continue" display-tooltip-when-elided="true" style="color: rgb(238, 238, 238); font-size: 36px; -unity-text-align: upper-center;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="s-menu" style="flex-grow: 1; display: none; overflow: hidden; transition-delay: 0s;">
+            <ui:VisualElement name="Top" class="panel" style="flex-grow: 0.01; flex-direction: row; justify-content: space-between;">
+                <ui:VisualElement name="Left" style="flex-grow: 0.5; flex-direction: row; justify-content: flex-start; align-items: stretch;">
+                    <ui:Button text="HOME" display-tooltip-when-elided="true" name="b-home" class="button button-top" />
+                    <ui:Button text="FRIENDS" display-tooltip-when-elided="true" name="b-friends" class="button button-top" />
+                    <ui:Button text="ROVER LORE" display-tooltip-when-elided="true" name="b-lore" class="button button-top" />
+                    <ui:Button text="SETTINGS" display-tooltip-when-elided="true" name="b-settings" class="button button-top" />
+                </ui:VisualElement>
+                <ui:VisualElement name="Right" style="flex-direction: row; justify-content: flex-end;">
+                    <ui:Label text="A Rover&apos;s Tale" display-tooltip-when-elided="true" class="title" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="Middle" style="flex-grow: 1; flex-direction: row; justify-content: space-between;">
+                <ui:VisualElement name="m-home" style="justify-content: flex-end; align-items: flex-start; flex-grow: 1; display: flex;">
+                    <ui:VisualElement name="Buttons" class="panel" style="width: 35%; flex-grow: 0.4;">
+                        <ui:Button text="Load Game" display-tooltip-when-elided="true" name="b-load" class="button button-menu" />
+                        <ui:Button text="Credits" display-tooltip-when-elided="true" name="b-credits" class="button button-menu" />
+                        <ui:Button text="Exit to Desktop" display-tooltip-when-elided="true" name="b-exit" class="button button-menu" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="m-friends" style="display: none;">
+                    <ui:Label text="Friends Menu!" display-tooltip-when-elided="true" class="title" />
+                </ui:VisualElement>
+                <ui:VisualElement name="m-lore" style="display: none;">
+                    <ui:Label text="Lore Menu!" display-tooltip-when-elided="true" class="title" />
+                </ui:VisualElement>
+                <ui:VisualElement name="m-settings" style="display: none;">
+                    <ui:Label text="Settings Menu!" display-tooltip-when-elided="true" class="title" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="Bottom" class="panel" style="flex-grow: 0.05; justify-content: flex-end;">
+                <ClockControl style="justify-content: center; align-items: flex-end;">
+                    <ui:Label text="CANCEL EVENTS CALLED (BACKSPACE): 0" display-tooltip-when-elided="true" name="cancelCount" class="title" style="display: none;" />
+                </ClockControl>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </MenuControl>
+</ui:UXML>
